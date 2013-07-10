@@ -1,4 +1,8 @@
-var message = fs.readFileSync('index.html','encoding')
+#!/usr/bin/env node
+
+// require core module `file system`
+var fs = require( 'fs' );
+var message = fs.readFileSync('index.html',encoding);
 var express = require('express');
 
 var app = express.createServer(express.logger());
